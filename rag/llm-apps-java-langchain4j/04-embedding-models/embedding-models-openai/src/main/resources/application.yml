@@ -1,0 +1,13 @@
+spring:
+  threads:
+    virtual:
+      enabled: true
+
+langchain4j:
+  open-ai:
+    client:
+      api-key: ${OPENAI_API_KEY}
+      log-requests: true
+    embedding:
+      options:
+        model: text-embedding-ada-002

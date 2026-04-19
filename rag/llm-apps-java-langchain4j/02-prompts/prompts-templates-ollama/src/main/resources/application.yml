@@ -1,0 +1,13 @@
+spring:
+  threads:
+    virtual:
+      enabled: true
+
+langchain4j:
+  ollama:
+    chat:
+      model: mistral
+      options:
+        temperature: 0.7
+    client:
+      log-requests: true

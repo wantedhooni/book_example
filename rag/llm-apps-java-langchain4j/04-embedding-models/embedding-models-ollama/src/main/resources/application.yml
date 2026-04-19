@@ -1,0 +1,11 @@
+spring:
+  threads:
+    virtual:
+      enabled: true
+
+langchain4j:
+  ollama:
+    embedding:
+      model: mistral
+    client:
+      log-requests: true
