@@ -1,0 +1,87 @@
+[versions]
+spring              = "7.0.6"
+springData          = "4.0.1"
+springSecurity      = "7.1.0-M2"
+springDataNoSql     = "5.0.1"
+springKafka         = "4.0.0"
+groovy              = "5.0.0"
+jUnit               = "6.0.2"
+mockito             = "5.21.0"
+logback             = "1.5.22"
+jakartaAnnotationApi        = "3.0.0"
+jakartaInjectApi     = "2.0.1"
+aspectj              = "1.9.24"
+mariaDB              = "3.5.7"
+mariaDBr2dbc         = "1.3.0"
+mongoDB              = "5.6.2"
+c3p0                 = "0.12.0"
+hikari               = "7.0.2"
+h2                   = "2.3.232"
+testcontainers       = "2.0.2"
+hibernate            = "7.3.0.Final"
+hibernateValidator   = "9.1.0.Final"
+jooq                 = "3.21.1"
+jackson              = "3.1.0-rc1"
+reactor              = "3.8.1"
+lang3Version         = "3.20.0"
+servletVersion       = "6.2.0-M1"
+thymeleafVersion     = "3.1.3.RELEASE"
+hamcrestVersion      = "3.0"
+commonsIO            = "2.21.0"
+
+[plugins]
+jooqPlugin = { id = "org.jooq.jooq-codegen-gradle", version.ref = "jooq"}
+
+[libraries]
+aspectjweaver = { module = "org.aspectj:aspectjweaver", version.ref = "aspectj"}
+aspectjrt = { module = "org.aspectj:aspectjrt", version.ref = "aspectj"}
+mockito = { module = "org.mockito:mockito-core", version.ref = "mockito"}
+groovyAll = { module = "org.apache.groovy:groovy-all", version.ref = "groovy"}
+jakartaAnnotation = { module = "jakarta.annotation:jakarta.annotation-api", version.ref = "jakartaAnnotationApi" }
+jakartaInject = { module = "jakarta.inject:jakarta.inject-api", version.ref = "jakartaInjectApi" }
+logback = { module = "ch.qos.logback:logback-classic", version.ref = "logback" }
+junitJupiter = { module = "org.junit.jupiter:junit-jupiter", version.ref = "jUnit" }
+junitJupiterPlatform = { module = "org.junit.platform:junit-platform-launcher", version.ref = "jUnit" }
+springContext = { module = "org.springframework:spring-context", version.ref = "spring" }
+springAspects = { module = "org.springframework:spring-aspects", version.ref = "spring" }
+springJdbc = { module = "org.springframework:spring-jdbc", version.ref = "spring" }
+springOrm = { module = "org.springframework:spring-orm", version.ref = "spring" }
+springTest = { module = "org.springframework:spring-test", version.ref = "spring" }
+springWebMvc = { module = "org.springframework:spring-webmvc", version.ref = "spring" }
+springWebSocket = { module = "org.springframework:spring-websocket", version.ref = "spring" }
+springMessaging = { module = "org.springframework:spring-messaging", version.ref = "spring" }
+springJms = { module = "org.springframework:spring-jms", version.ref = "spring" }
+springKafka = { module = "org.springframework.data:spring-kafka", version.ref = "springKafka" }
+springDataJpa = { module = "org.springframework.data:spring-data-jpa", version.ref = "springData" }
+springDataEnvers = { module = "org.springframework.data:spring-data-envers", version.ref = "springData" }
+springDataR2dbc = { module = "org.springframework.data:spring-data-r2dbc", version.ref = "springData" }
+springDataMongo = { module = "org.springframework.data:spring-data-mongodb", version.ref = "springDataNoSql" }
+springSecurityWeb = { module = "org.springframework.security:spring-security-web", version.ref = "springSecurity" }
+springSecurityConfig = { module = "org.springframework.security:spring-security-config", version.ref = "springSecurity" }
+springSecurityTest = { module = "org.springframework.security:spring-security-test", version.ref = "springSecurity" }
+mariaDB = { module = "org.mariadb.jdbc:mariadb-java-client", version.ref = "mariaDB" }
+mariaDBr2dbc = { module = "org.mariadb:r2dbc-mariadb", version.ref = "mariaDBr2dbc" }
+mongoDB = { module = "org.mongodb:mongodb-driver-sync", version.ref = "mongoDB" }
+mongoDBReactive = { module = "org.mongodb:mongodb-driver-reactivestreams", version.ref = "mongoDB" }
+hibernateCore = { module = "org.hibernate.orm:hibernate-core", version.ref = "hibernate" }
+hibernateValidator = { module = "org.hibernate.validator:hibernate-validator", version.ref = "hibernateValidator" }
+c3p0 = { module = "com.mchange:c3p0", version.ref = "c3p0"}
+hikariCP = { module = "com.zaxxer:HikariCP", version.ref = "hikari"}
+h2 = { module = "com.h2database:h2", version.ref = "h2"}
+tcMariaDB = { module = "org.testcontainers:testcontainers-mariadb", version.ref = "testcontainers"}
+tcMongoDB = { module = "org.testcontainers:testcontainers-mongodb", version.ref = "testcontainers"}
+tcJJ = { module = "org.testcontainers:testcontainers-junit-jupiter", version.ref = "testcontainers"}
+jooqCodeGen = { module = "org.jooq:jooq-codegen", version.ref = "jooq"}
+jacksonDatabind = {module = "tools.jackson.core:jackson-databind", version.ref = "jackson"}
+jacksonDataformatXml = {module = "tools.jackson.dataformat:jackson-dataformat-xml", version.ref = "jackson"}
+reactorTest = {module = "io.projectreactor:reactor-test", version.ref = "reactor"}
+reactorCore = {module = "io.projectreactor:reactor-core", version.ref = "reactor"}
+commonsLang3 = {module = "org.apache.commons:commons-lang3", version.ref = "lang3Version"}
+servletApi = {module = "jakarta.servlet:jakarta.servlet-api", version.ref = "servletVersion"}
+thymeleaf = {module = "org.thymeleaf:thymeleaf-spring6", version.ref = "thymeleafVersion"}
+thymeleafSecurity = {module = "org.thymeleaf.extras:thymeleaf-extras-springsecurity6", version = "3.1.3.RELEASE"}
+thymeleafTime = {module = "org.thymeleaf.extras:thymeleaf-extras-java8time", version = "3.0.4.RELEASE"}
+tomcatEl = {module = "org.apache.tomcat.embed:tomcat-embed-el", version = "11.0.15"}
+hamcrest = {module = "org.hamcrest:hamcrest", version.ref = "hamcrestVersion"}
+restAssured = {module = "io.rest-assured:rest-assured", version = "6.0.0"}
+commonsIO = {module = "commons-io:commons-io", version.ref = "commonsIO"}
