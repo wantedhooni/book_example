@@ -1,0 +1,23 @@
+SetUp a Zookeeper/Kafka Broker in Local:
+https://github.com/dilipsundarraj1/kafka-for-developers-using-spring-boot-v2/blob/main/SetUpKafkaDocker.md#set-up-broker-and-zookeeper
+
+Produce and Consume Messages with Key:
+https://github.com/dilipsundarraj1/kafka-for-developers-using-spring-boot-v2/blob/main/SetUpKafkaDocker.md#producer-and-consume-the-messages-with-key-and-value
+
+Consumer Offsets:
+https://github.com/dilipsundarraj1/kafka-for-developers-using-spring-boot-v2/blob/main/SetUpKafkaDocker.md#list-the-topics-in-a-cluster
+
+Consumer Groups:
+https://github.com/dilipsundarraj1/kafka-for-developers-using-spring-boot-v2/blob/main/SetUpKafkaDocker.md#how-to-view-consumer-groups
+
+Commit Log and Retention Policy:
+https://github.com/dilipsundarraj1/kafka-for-developers-using-spring-boot-v2/blob/main/SetUpKafkaDocker.md#log-file-and-related-config
+
+How Kafka Cluster distributes the Client Requests ? - Leader/Follower:
+https://github.com/dilipsundarraj1/kafka-for-developers-using-spring-boot-v2/blob/main/SetUpKafkaDocker.md#set-up-a-kafka-cluster-with-3-brokers
+
+How Kafka handles Data Loss ? - Replication and In-Sync-Replica(ISR):
+https://github.com/dilipsundarraj1/kafka-for-developers-using-spring-boot-v2/blob/main/SetUpKafkaDocker.md#describe-topic
+
+Configuring min.insync.replicas:
+https://github.com/dilipsundarraj1/kafka-for-developers-using-spring-boot-v2/blob/main/SetUpKafkaDocker.md#setting-up-mininsyncreplica
